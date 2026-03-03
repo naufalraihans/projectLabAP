@@ -1,0 +1,304 @@
+[[problems]]
+id = 1
+title = "Dasar Input Output"
+difficulty = "Easy"
+category = "Modul 1"
+tags = ["C Language", "Basic IO"]
+language = "c"
+description = '''
+**INTRO TO C**
+
+Pak Dengklek bekerja di bidang administrasi kampus yang berada di Laboratorium Algoritma dan Pemrograman, beliau bertugas untuk mendata banyak mahasiswa.
+Pada Kali ini, pak dengklek ditugaskan untuk menginput data ke sistem, dan menampilkannya.
+<br><br>
+Pak dengklek kesulitan dalam membuatnya, jadi dia meminta bantuanmu untuk membuat program yang menerima input : 
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+    <ul>
+        <li><span class="font-mono">nama (string)</span></li>
+        <li><span class="font-mono">NIM (string)</span></li>
+        <li><span class="font-mono">umur (integer)</span></li>
+        <li><span class="font-mono">kelas (character)</span></li>
+    </ul>
+</div>
+
+dan menampilkan output : 
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+    <ul>
+        <li><span class="font-mono">Nama : [nama]</span></li>
+        <li><span class="font-mono">NIM : [NIM]</span></li>
+        <li><span class="font-mono">Umur : [umur]</span></li>
+        <li><span class="font-mono">Kelas : [kelas]</span></li>
+    </ul>
+</div>
+
+Bantulah Pak Dengklek Untuk mengerjakan tugas nya 
+<br>
+<br>
+### Example 1:
+<p><span class="font-mono">Input:</span></p>
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="font-mono">Dengklek Balsem</span></p>
+  <p><span class="font-mono">5048241038</span></p>
+  <p><span class="font-mono">20</span></p>
+  <p><span class="font-mono">A</span></p>
+</div>
+
+<p><span class="font-mono">Output:</span></p>
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="font-mono">Nama : Dengklek Balsem</span></p>
+  <p><span class="font-mono">NIM : 5048241038</span></p>
+  <p><span class="font-mono">Umur : 20</span></p>
+  <p><span class="font-mono">Kelas : A</span></p>
+</div>
+'''
+defaultCode = '''
+#include <>
+
+int main() {
+
+    return 0;
+}
+'''
+testCases = [
+  {input = "Dengklek Balsem\n5048241038\n20\nA", output = "Nama : Dengklek Balsem\nNIM : 5048241038\nUmur : 20\nKelas : A"},
+  {input = "Siti Juleha\n202511001\n19\nB", output = "Nama : Siti Juleha\nNIM : 202511001\nUmur : 19\nKelas : B"},
+  {input = "Muhammad Sumbul\n1234567890\n21\nC", output = "Nama : Muhammad Sumbul\nNIM : 1234567890\nUmur : 21\nKelas : C"},
+  {input = "Asep\n001\n99\nD", output = "Nama : Asep\nNIM : 001\nUmur : 99\nKelas : D"}
+]
+
+
+
+[[problems]]
+id = 2
+title = "Menentukan Bilangan Positif atau Negatif"
+difficulty = "Easy"
+category = "Modul 1"
+tags = ["Basic IO", "If-Else"]
+language = "python"
+description = '''
+Diberikan sebuah bilangan bulat $n$. Buatlah program untuk menentukan apakah bilangan tersebut adalah bilangan **POSITIF**, **NEGATIF**, atau **NOL**.
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> n = 10</p>
+  <p><span class="text-gray-400">Output:</span> POSITIF</p>
+</div>
+
+### Example 2:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> n = -5</p>
+  <p><span class="text-gray-400">Output:</span> NEGATIF</p>
+</div>
+'''
+defaultCode = '''
+try:
+    n = int(input())
+    if n > 0: print("POSITIF")
+    elif n < 0: print("NEGATIF")
+    else: print("NOL")
+except: pass
+'''
+testCases = [
+  {input = "10\n", output = "POSITIF"},
+  {input = "-5\n", output = "NEGATIF"},
+  {input = "0\n", output = "NOL"},
+  {input = "100\n", output = "POSITIF"}
+]
+
+[[problems]]
+id = 3
+title = "Ganjil atau Genap"
+difficulty = "Easy"
+category = "Modul 1"
+tags = ["Math", "If-Else"]
+language = "python"
+description = '''
+Pak Dengklek memiliki banyak bebek berjumlah $n$. Ia ingin menggiring bebek bebeknya ke suatu sawah
+Bebek bebeknya akan dibariskan. Oleh Karena itu, Pak Dengklek ingin mengetahui apakah bebek bebeknya akan dibariskan **GANJIL** atau **GENAP**.
+\\
+Bantulah Pak Dengklek dengan menuliskan program di sebelah kanan
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> n = 2</p>
+  <p><span class="text-gray-400">Output:</span> GENAP</p>
+</div>
+
+### Example 2:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> n = 3</p>
+  <p><span class="text-gray-400">Output:</span> GANJIL</p>
+</div>
+'''
+defaultCode = '''
+try:
+    n = int(input())
+    if n % 2 == 0: print("GENAP")
+    else: print("GANJIL")
+except: pass
+'''
+testCases = [
+  {input = "2\n", output = "GENAP"},
+  {input = "3\n", output = "GANJIL"},
+  {input = "0\n", output = "GENAP"},
+  {input = "-1\n", output = "GANJIL"}
+]
+
+
+[[problems]]
+id = 4
+title = "Konversi Nilai Angka ke Huruf"
+difficulty = "Hard"
+category = "Modul 1"
+tags = ["Logic", "Grading"]
+language = "python"
+description = '''
+Diberikan nilai $n$ (0-100). Konversi ke huruf:
+* 80 - 100: **A**
+* 70 - 79: **B**
+* 60 - 69: **C**
+* < 60: **D**
+* Lainnya: **INVALID**
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> n = 85</p>
+  <p><span class="text-gray-400">Output:</span> A</p>
+</div>
+'''
+defaultCode = '''
+try:
+    n = int(input())
+    if n < 0 or n > 100: print("INVALID")
+    elif n >= 80: print("A")
+    elif n >= 70: print("B")
+    elif n >= 60: print("C")
+    else: print("D")
+except: pass
+'''
+testCases = [
+  {input = "85\n", output = "A"},
+  {input = "75\n", output = "B"},
+  {input = "65\n", output = "C"},
+  {input = "50\n", output = "D"},
+  {input = "105\n", output = "INVALID"},
+  {input = "-5\n", output = "INVALID"}
+]
+
+[[problems]]
+id = 5
+title = "Menghitung Luas Lingkaran"
+difficulty = "Easy"
+category = "Modul 2"
+tags = ["Math", "Geometry"]
+language = "python"
+description = '''
+Bantu Pak Budi menghitung luas lapangannya dengan menggunakan persamaan:
+$$
+L = \\pi \\cdot r^{2}
+$$
+Dimana $\\pi \\approx 3.14$.
+
+**Format Input:**
+Satu bilangan bulat $r$ (jari-jari).
+
+**Format Output:**
+Luas lingkaran dengan format float (gunakan `print(float(hasil))` atau format string jika perlu, tapi float standar sudah cukup).
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> r = 10</p>
+  <p><span class="text-gray-400">Output:</span> 314.0</p>
+</div>
+'''
+defaultCode = '''
+try:
+    r = int(input())
+    # Tulis kodemu di sini
+    pi = 3.14
+    luas = pi * (r ** 2)
+    print(luas)
+except: pass
+'''
+testCases = [
+  {input = "10\n", output = "314.0"},
+  {input = "1\n", output = "3.14"},
+  {input = "0\n", output = "0.0"}
+]
+
+[[problems]]
+id = 6
+title = "Tantangan Aslab: Palindrome"
+difficulty = "ASLAB"
+category = "Challenge"
+tags = ["String", "Logic"]
+language = "python"
+description = '''
+**SOAL SPESIAL ASLAB**
+
+Buatlah program untuk memeriksa apakah sebuah kata adalah **Palindrome** (dibaca sama dari depan dan belakang).
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> kata = "katak"</p>
+  <p><span class="text-gray-400">Output:</span> YES</p>
+</div>
+
+### Example 2:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> kata = "koding"</p>
+  <p><span class="text-gray-400">Output:</span> NO</p>
+</div>
+'''
+defaultCode = '''
+try:
+    s = input()
+    if s == s[::-1]: print("YES")
+    else: print("NO")
+except: pass
+'''
+testCases = [
+  {input = "katak\n", output = "YES"},
+  {input = "koding\n", output = "NO"},
+  {input = "aba\n", output = "YES"},
+  {input = "a\n", output = "YES"}
+]
+
+[[problems]]
+id = 7
+title = "C Basic: Hello Name"
+difficulty = "Easy"
+category = "Modul 123"
+tags = ["C Language", "Basic IO"]
+language = "c"
+description = '''
+**INTRO TO C**
+
+Buatlah program C yang menerima input nama seseorang, lalu mencetak "Hello [Nama]".
+
+**Format Input:**
+Satu kata (string).
+
+**Format Output:**
+"Hello [Nama]"
+
+### Example 1:
+<div class="bg-[#2d2d2d] p-4 rounded-lg font-mono text-sm">
+  <p><span class="text-gray-400">Input:</span> Budi</p>
+  <p><span class="text-gray-400">Output:</span> Hello Budi</p>
+</div>
+'''
+defaultCode = '''
+#include <stdio.h>
+
+int main() {
+    char name[100];
+    scanf("%s", name);
+    printf("Hello %s", name);
+    return 0;
+}
+'''
+testCases = [
+  {input = "Budi\n", output = "Hello Budi"},
+  {input = "Andi\n", output = "Hello Andi"}
+]
