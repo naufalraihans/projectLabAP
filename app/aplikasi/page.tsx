@@ -18,7 +18,7 @@ export default function AplikasiPage() {
     {
       name: "MinGW-w64",
       desc: "Compiler C/C++ untuk Windows.",
-      href: "https://www.mingw-w64.org/downloads/",
+      href: "https://sourceforge.net/projects/mingw/",
       icon: <Terminal size={32} className="text-gray-400" />,
     },
     {
