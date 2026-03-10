@@ -1,6 +1,6 @@
 
 import Link from 'next/link';
-import { ArrowRight, Code, Cpu, Database } from 'lucide-react';
+import { ArrowRight, Code, Cpu, Database, MessageSquare } from 'lucide-react';
 
 export default function LandingPage() {
     return (
@@ -73,6 +73,12 @@ export default function LandingPage() {
                         icon={<Code className="text-purple-400" size={32} />}
                         title="Aplikasi Koding"
                         desc="Download tools dan aplikasi penunjang coding."
+                    />
+                    <FeatureCard
+                        href="https://drive.google.com/file/d/1nFyyotHhU9O2pa6PFHY2Xw5_yDF8OF-L/view"
+                        icon={<MessageSquare className="text-pink-400" size={32} />}
+                        title="Kritik dan saran"
+                        desc="Sampaikan kritik dan saran untuk pengembangan praktikum."
                     />
                 </div>
             </div>
