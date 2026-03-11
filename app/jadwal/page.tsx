@@ -6,7 +6,7 @@ export default function JadwalPage() {
     const classes = [
         { name: "Teknik Elektro", href: "https://docs.google.com/spreadsheets/d/1tC03OquH5jbKQrKlrKVHaU3CBT92SwVB/edit?usp=sharing&ouid=102145574220169337817&rtpof=true&sd=true", color: "text-blue-400", border: "hover:border-blue-400/50" },
         { name: "Teknik Sistem Energi", href: "https://docs.google.com/spreadsheets/d/1v_6_aL0rUah45jnGxYKakRC2E9pnJZn1/edit?usp=sharing&ouid=102145574220169337817&rtpof=true&sd=true", color: "text-yellow-400", border: "hover:border-yellow-400/50" },
-        { name: "Teknik Tenaga Listrik", href: "https://sites.google.com/view/lab-ap-itpln/home?authuser=0", color: "text-green-400", border: "hover:border-green-400/50" },
+        { name: "Teknik Tenaga Listrik", href: "https://docs.google.com/spreadsheets/d/16h_6kBFsi1ijRbAogpbG4_r8Gvb4-2KcUZlU7RPmaTY/edit?usp=drivesdk", color: "text-green-400", border: "hover:border-green-400/50" },
         { name: "Teknologi Elektro", href: "https://docs.google.com/spreadsheets/d/1ddkwtD006nvsSJALKH84mut0m7SL0rVgOw3INDPh8K8/edit?gid=1398971844#gid=1398971844", color: "text-purple-400", border: "hover:border-purple-400/50" },
         { name: "Kelas Karyawan", href: "https://docs.google.com/spreadsheets/d/1ddkwtD006nvsSJALKH84mut0m7SL0rVgOw3INDPh8K8/edit?gid=1398971844#gid=1398971844", color: "text-red-400", border: "hover:border-red-400/50" },
     ];
