@@ -58,7 +58,7 @@ export default function Navbar() {
           active={isActive("/learn")}
         />
         <NavLink
-          href="https://praktikkan-lab-ap.vercel.app/index.html"
+          href="https://praktikkan-lab-ap.vercel.app"
           icon={<Terminal size={18} />}
           label="Log in"
           active={false}
